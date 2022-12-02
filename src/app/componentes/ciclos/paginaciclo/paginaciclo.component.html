@@ -1,0 +1,70 @@
+<body>
+<article id="conteudo">
+    <div id="caixa-1">
+            <div id="ciclo">
+                <label id="CicloTitulo">Ciclo</label>
+                <label id="statusCiclo" for="">Status</label>
+                <form id="formCiclo" name ="form" action="" method="post">
+                    <input id="camponome" class="inputform" type="text" name="Busca" placeholder="Nome" > 
+                    <!------------<span id="mensagem-erro"></span>---->
+                    <select id="opAtivo">      
+                        <option value="selecione">Selecione um status</option>                    
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input id="datacorte"  type="text" class="inputform" placeholder="Data de corte"  onfocus="(this.type='date')" onblur="(this.type='text')"  id="date"  />
+                    <!--<input type="text" placeholder="Data de corte" onfocus="(this.type='date')" size="38">-->
+                    <input id="datakr"  type="text" class="inputform" placeholder="Data de KR" onfocus="(this.type='date')" onblur="(this.type='text')" >
+                    <br>
+                    <br>
+                    <br>
+                    <div class="botao">
+                        <button class="save" onClick="salvar()" type="button">&#128190; Salvar</button>
+                        <button class="enviar" type="reset">&#128459; Novo</button>
+                    </div>
+                </form>  
+            </div>
+    </div>
+    <div id="caixa-2">
+        <div id="busca">
+            <label id="BuscaTitulo" >Busca</label>
+            <br>
+            <br>
+            <form id="formbusca" name="form "action="" method="post">                                              
+                <input id="campobusca" type="text" name="Ciclo" placeholder="Buscar" >  <button class="bt" type="submit">	&#128269; Buscar</button>
+                <br>
+                <br>
+                    <select id="nome-busca" style="width:47%"> 
+                        <option value="ativo">Nome</option>
+                    </select>
+                    <select id="status-busca" style="width:48%">
+                         <option value="ativo">Status</option>
+                     </select>
+                     <div class="tabela">
+                            <table id="tabela-ciclos-wid">
+                                <tr>
+                                    <td class="inativo">Contas</td>
+                                    <td class="inativo">Ativo</td>
+                                </tr>
+                                <tr>
+                                    <td>Contas</td>
+                                    <td>Inativo</td>
+                                </tr>
+                                <tr>
+                                    <td class="inativo">Contas</td>
+                                    <td class="inativo">Ativo</td>
+                                </tr>
+                            </table>
+                        </div>
+                <br>
+                <p id="of">1 of 1</p>
+                <p id="unicode">&#9198; &#x25C0; 1 &#x25B6; &#x23ED;	
+                   </p>
+            
+            </form>
+        </div>
+    </div>
+</article>
+</body>

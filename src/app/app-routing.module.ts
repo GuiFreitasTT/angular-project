@@ -1,7 +1,29 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PaginacicloComponent } from './componentes/ciclos/paginaciclo/paginaciclo.component';
+import { DetalhamentoComponent } from './componentes/detalhamento/detalhamento.component';
+import { FrenteEstrategicaComponent } from './componentes/frente-estrategica/frente-estrategica.component';
+import { UnidadeComponent } from './componentes/unidade/unidade.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'paginaciclo',
+    component: PaginacicloComponent
+  },
+  {
+    path:'unidade',
+    component: UnidadeComponent
+  },
+  {
+    path:'frente-estrategica',
+    component: FrenteEstrategicaComponent
+  },
+  {
+    path: 'detalhamento',
+    component: DetalhamentoComponent
+  }
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
