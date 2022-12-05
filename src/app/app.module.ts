@@ -9,6 +9,7 @@ import { PaginacicloComponent } from './componentes/ciclos/paginaciclo/paginacic
 import { UnidadeComponent } from './componentes/unidade/unidade.component';
 import { FrenteEstrategicaComponent } from './componentes/frente-estrategica/frente-estrategica.component';
 import { DetalhamentoComponent } from './componentes/detalhamento/detalhamento.component';
+import { HomeComponent } from './componentes/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { DetalhamentoComponent } from './componentes/detalhamento/detalhamento.c
     UnidadeComponent,
     FrenteEstrategicaComponent,
     DetalhamentoComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

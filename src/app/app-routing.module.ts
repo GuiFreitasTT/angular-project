@@ -1,3 +1,4 @@
+import { HomeComponent } from './componentes/home/home.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PaginacicloComponent } from './componentes/ciclos/paginaciclo/paginaciclo.component';
@@ -6,6 +7,15 @@ import { FrenteEstrategicaComponent } from './componentes/frente-estrategica/fre
 import { UnidadeComponent } from './componentes/unidade/unidade.component';
 
 const routes: Routes = [
+  {
+    path:'',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path:'home',
+    component: HomeComponent
+  },
   {
     path:'paginaciclo',
     component: PaginacicloComponent

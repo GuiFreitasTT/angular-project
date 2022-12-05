@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./paginaciclo.component.css']
 })
 export class PaginacicloComponent {
-
+  
 }
