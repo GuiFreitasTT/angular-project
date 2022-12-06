@@ -21,14 +21,16 @@ export class CabecalhoComponent {
           conteudo.style.marginLeft = '250px';
           this.ativo = true;
 
-        }else{
-
-          menu.style.width ='0px';
-          conteudo.style.marginLeft = '0px';
-          this.ativo = false;
+        }else{ 
+         this.fecharMenu();
         }
         
+       menu.addEventListener('click',this.fecharMenu);
         }
         
+        fecharMenu(){
+          location.reload();
+        }
     }
+    
 
