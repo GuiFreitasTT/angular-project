@@ -4,10 +4,9 @@
             <div id="ciclo">
                 <label id="CicloTitulo">Ciclo</label>
                 <label id="statusCiclo" for="">Status</label>
-                <form id="formCiclo" name ="form" action="" method="post" (ngSubmit)="Enviar()">
+                <form id="formCiclo" name ="form" action="" method="post" (ngSubmit)="Enviar()" #loginform="ngForm">
                   <div class="nome">
-
-                  <app-mensagem *ngIf="campoNome.invalid" mensagem="Nome obrigatório  "></app-mensagem>
+                  <app-mensagem *ngIf="campoNome.invalid && campoNome.touched" mensagem="Nome obrigatório "></app-mensagem>
                     <input id="camponome"
                       [(ngModel)]="nome"
                       required #campoNome="ngModel"
@@ -16,15 +15,15 @@
                       type="text"
                       placeholder="Nome"
                        >
-                    <select id="opAtivo">
-                        <option value="selecione">Selecione um status</option>
-                        <option value="ativo">Ativo</option>
-                        <option value="inativo">Inativo</option>
+                    <select name="status"  id="opAtivo">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="Ativo" >Ativo </option>
+                        <option value="Inativo"  >Inativo</option>
                     </select>
                   </div>
                   <div class="datas">
                   <div class="primeiraData">
-                  <app-mensagem *ngIf="dataCorte.invalid" mensagem="preencha a data de corte" >  </app-mensagem>
+                  <app-mensagem *ngIf="dataCorte.invalid && dataCorte.touched" mensagem="Preencha a data de corte" >  </app-mensagem>
                     <input id="datacorte"
                       [(ngModel)]="datacorte"
                       #dataCorte="ngModel"
@@ -37,7 +36,7 @@
                       id="date" required />
                     </div>
                     <div class="segundadata">
-                      <app-mensagem *ngIf="dataKr.invalid" mensagem="preencha a data KR" ></app-mensagem>
+                      <app-mensagem *ngIf="dataKr.invalid && dataKr.touched" mensagem="Preencha a data KR" ></app-mensagem>
                       <!------INSERIR APP DE-->
                       <input id="datakr"
                       [(ngModel)]="datakr"
@@ -53,8 +52,8 @@
                   </div>
                   <div class="ajustaBotao">
                     <div class="botao">
-                      <button class="save" type="submit" value="submit">&#128190; Salvar</button>
-                      <button class="enviar" type="reset">&#128195; Novo</button>
+                      <button class="save" type="submit" (click)="executa()" value="submit"> Salvar</button>
+                      <button class="enviar" type="reset"> Novo</button>
                     </div>
                 </div>
                 </form>
@@ -66,7 +65,7 @@
             <br>
             <br>
             <form id="formbusca" name="form "action="" method="post">
-                <input id="campobusca" type="text" name="Ciclo" placeholder="Buscar" >  <button class="bt" type="submit">	&#128269; Buscar</button>
+                <input id="campobusca" type="text" name="Ciclo" placeholder="Buscar" > <button class="bt" type="submit">Buscar</button>
                 <br>
                 <br>
                     <select id="nome-busca" style="width:47%">
@@ -79,7 +78,7 @@
                             <table id="tabela-ciclos-wid">
                                 <tr>
                                     <td class="inativo">Contas</td>
-                                    <td class="inativo">Ativo</td>
+                                    <td class="inativo">Inativo</td>
                                 </tr>
                                 <tr>
                                     <td>Contas</td>

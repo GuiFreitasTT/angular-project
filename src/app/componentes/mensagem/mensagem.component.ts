@@ -9,7 +9,6 @@ export class MensagemComponent implements OnInit{
 
   @Input()
   mensagem = '';
-  mensagemdois = '';
     constructor() {}
 
     ngOnInit(): void {
