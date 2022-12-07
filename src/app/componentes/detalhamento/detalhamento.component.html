@@ -1,25 +1,25 @@
 <article id="conteudo">
     <div id="div-detalhamento">
-        <label id="detalhamento-frente" for="">Detalhamento Frentes estratégicas</label>  
-<div class="caixas">     
+        <label id="detalhamento-frente" for="">Detalhamento Frentes estratégicas</label>
+<div class="caixas">
     <div class="selection">
-        <select class="select-detalha" > 
+        <select class="select-detalha" >
             <option value="ativo">BU</option>
         </select>
-        <select class="select-detalha"> 
+        <select class="select-detalha">
             <option value="ativo">Frente</option>
         </select>
         <input class="select-detalha" type="text" name="Ciclo" placeholder="Resultado chave da frente" >
-        
-            </div> 
+
+            </div>
             <div class="selection-2">
-                <select class="select-detalha-2"> 
+                <select class="select-detalha-2">
                     <option value="ativo">Peso</option>
                 </select>
-                <select class="select-detalha-2"> 
+                <select class="select-detalha-2">
                     <option value="ativo">Polaridade</option>
                 </select>
-                <select class="select-detalha-2"> 
+                <select class="select-detalha-2">
                     <option value="ativo">Medida</option>
                 </select>
                 <br>
@@ -28,7 +28,7 @@
                 <div class="forms-sem-historico">
                     <input id="form-itens" type="text"  placeholder="Baseline" >
                     <input id="form-itens" type="text"  placeholder="Dono KR" >
-                </div>  
+                </div>
                 <div class="textareaT">
                 <textarea id="msg"  style="resize: none;" ng-model="myTextarea" placeholder="Detalhamento"></textarea>
                 <textarea id="msg"  style="resize: none;" ng-model="myTextarea" placeholder="Memoria de calculo"></textarea>
@@ -41,9 +41,9 @@
                     <input id="itens-obj" type="text"  placeholder="Meta do ciclo" size="23">
                     <input id="itens-obj" type="text"  placeholder="Submeta" size="22">
                     <input id="itens-obj" type="text"  placeholder="% de Submeta" size="22">
-                    
+
                 </div>
-            </div>  
+            </div>
             <div class="curva-mensal">
                 <p id="titulo">Curva mensal</p>
                 <hr id="segundohr">
@@ -52,10 +52,10 @@
                     <input id="itens-curva"  type="text"  placeholder="Meta mês" size="23">
                     <button id="itens-curva" class="adicionar" type="submit">&#43; Adicionar </button>
                 </div>
-            </div> 
+            </div>
             <div class="curva-mensal-mes">
                 <div class="itens-mes">
-                        <select id="itens-mes"> 
+                        <select id="itens-mes">
                             <option value="ativo">Mês/Ano</option>
                         </select>
                         <select id="itens-mes" >
@@ -69,12 +69,12 @@
             <p id="p-nome-busca">Nenhum registro encontrado</p>
             <div class="footer-div">
                 <p id="unicode-2">&#9198; &#x25C0; 1 &#x25B6; &#x23ED;</p>
-            </div>           
-    </div>  
-            <div class="botao">
+            </div>
+    </div>
+            <div class="botaos">
                 <button class="save" type="submit">&#128190; Salvar</button>
                 <button class="enviar" type="submit">&#128459; Novo</button>
-            </div>   
+            </div>
         </div>
 
         <!------CAIXA 2 - >       'BUSCA'          -->
@@ -82,12 +82,12 @@
 
     <div id="caixa-2">
         <div id="busca-detalhamento">
-                <label id="ciclo-detalhamento" for="cicloum">Ciclo</label> 
-                <div id="primeira-parte-caixa-2"> 
-                        <label id="found" for="found">Busca</label> 
+                <label id="ciclo-detalhamento" for="cicloum">Ciclo</label>
+                <div id="primeira-parte-caixa-2">
+                        <label id="found" for="found">Busca</label>
                     <div id="primeira-parte-caixa-3">
                         <select id="contas-parte-3">
-                            <option value="ativo">Contas</option> 
+                            <option value="ativo">Contas</option>
                         </select>
                         <button id="contas-parte-4" type="submit">&#128459; Exportar </button>
                     </div>
@@ -95,15 +95,15 @@
                 <br>
                  <!--TABELA r-->
             <div id="tabela-busca">
-                <form  name="form "action="" method="post"> 
-                    <div class="bus-lupa">          	
-                    &#128269;  <input id="buscar-detlha" type="text" name="Ciclo" placeholder="Buscar" size="20">  
+                <form  name="form "action="" method="post">
+                    <div class="bus-lupa">
+                    &#128269;  <input id="buscar-detlha" type="text" name="Ciclo" placeholder="Buscar" size="20">
                 </div>
                        <div class="pular"></div>
-                        
+
                     <table id="primeira-parte">
                         <tr>
-                            <td id="a-bu">BU</td> 
+                            <td id="a-bu">BU</td>
                             <td id="a">Frente</td>
                             <td id="a">Nome da meta</td>
                             <td id="a">Peso</td>
@@ -115,10 +115,10 @@
             </div>
                     <table id="segunda-parte">
                         <tr>
-                            <td class="inativo">&#5171; Contas</td> 
+                            <td class="inativo">&#5171; Contas</td>
                         </tr>
                         <tr>
-                            <td class="ativo">&#5171; Contas</td>                   
+                            <td class="ativo">&#5171; Contas</td>
                         </tr>
                         <tr>
                             <td class="inativo">&#5171; Contas</td>
@@ -131,7 +131,7 @@
                     <p id="of">1 of 1</p>
                     <div class="footer-div-busca">
                         <p id="unicode-2">&#9198; &#x25C0; 1 &#x25B6; &#x23ED;</p>
-                    </div>         
+                    </div>
         </div>
     </div>
 </article>

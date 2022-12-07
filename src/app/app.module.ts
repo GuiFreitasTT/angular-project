@@ -1,3 +1,5 @@
+import { MensagemModule } from './componentes/mensagem/mensagem.module';
+import { MensagemComponent } from './componentes/mensagem/mensagem.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +12,8 @@ import { UnidadeComponent } from './componentes/unidade/unidade.component';
 import { FrenteEstrategicaComponent } from './componentes/frente-estrategica/frente-estrategica.component';
 import { DetalhamentoComponent } from './componentes/detalhamento/detalhamento.component';
 import { HomeComponent } from './componentes/home/home.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -21,10 +25,13 @@ import { HomeComponent } from './componentes/home/home.component';
     FrenteEstrategicaComponent,
     DetalhamentoComponent,
     HomeComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MensagemModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
