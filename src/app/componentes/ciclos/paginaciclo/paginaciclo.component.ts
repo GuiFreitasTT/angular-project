@@ -19,10 +19,8 @@ export class PaginacicloComponent implements OnInit {
 
   executa(){
     alert("Os dados foram salvos")
-   // location.reload();
-   console.log(this.datacorte)
-   console.log(this.datakr)
-   console.log(this.nome)
-   
+    location.reload();
+
+
   }
 }

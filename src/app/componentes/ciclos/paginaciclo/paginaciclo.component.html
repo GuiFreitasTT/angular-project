@@ -6,7 +6,6 @@
                 <label id="statusCiclo" for="">Status</label>
                 <form id="formCiclo" name ="form" action="" method="post" (ngSubmit)="Enviar()" #loginform="ngForm">
                   <div class="nome">
-                  <app-mensagem *ngIf="campoNome.invalid && campoNome.touched" mensagem="Nome obrigatório "></app-mensagem>
                     <input id="camponome"
                       [(ngModel)]="nome"
                       required #campoNome="ngModel"
@@ -23,7 +22,6 @@
                   </div>
                   <div class="datas">
                   <div class="primeiraData">
-                  <app-mensagem *ngIf="dataCorte.invalid && dataCorte.touched" mensagem="Preencha a data de corte" >  </app-mensagem>
                     <input id="datacorte"
                       [(ngModel)]="datacorte"
                       #dataCorte="ngModel"
@@ -36,7 +34,6 @@
                       id="date" required />
                     </div>
                     <div class="segundadata">
-                      <app-mensagem *ngIf="dataKr.invalid && dataKr.touched" mensagem="Preencha a data KR" ></app-mensagem>
                       <!------INSERIR APP DE-->
                       <input id="datakr"
                       [(ngModel)]="datakr"
@@ -51,10 +48,8 @@
                     </div>
                   </div>
                   <div class="ajustaBotao">
-                    <div class="botao">
                       <button class="save" type="submit" (click)="executa()" value="submit"> Salvar</button>
                       <button class="enviar" type="reset"> Novo</button>
-                    </div>
                 </div>
                 </form>
             </div>
@@ -68,12 +63,14 @@
                 <input id="campobusca" type="text" name="Ciclo" placeholder="Buscar" > <button class="bt" type="submit">Buscar</button>
                 <br>
                 <br>
-                    <select id="nome-busca" style="width:47%">
+                <div class="select-ciclos">
+                    <select id="nome-busca" style="width:46.8%">
                         <option value="ativo">Nome</option>
                     </select>
                     <select id="status-busca" style="width:48%">
                          <option value="ativo">Status</option>
                      </select>
+                </div>
                      <div class="tabela">
                             <table id="tabela-ciclos-wid">
                                 <tr>
@@ -89,13 +86,16 @@
                                     <td class="inativo">Ativo</td>
                                 </tr>
                             </table>
-                        </div>
+                      </div>
                 <br>
                 <p id="of">1 of 1</p>
-                <p id="unicode">&#9198; &#x25C0; 1 &#x25B6; &#x23ED;
-                   </p>
-
-            </form>
+                <p id="unicode">&#9198; &#x25C0; 1 &#x25B6; &#x23ED;</p>
+                  <div id="erro">
+                    <app-mensagem *ngIf="campoNome.invalid && campoNome.touched" mensagem="Nome obrigatório "></app-mensagem>
+                    <app-mensagem *ngIf="dataCorte.invalid && dataCorte.touched" mensagem="Preencha a data de corte" >  </app-mensagem>
+                    <app-mensagem *ngIf="dataKr.invalid && dataKr.touched" mensagem="Preencha a data KR" ></app-mensagem>
+                  </div>
+          </form>
         </div>
     </div>
 </article>
