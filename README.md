@@ -6,4 +6,4 @@ Esse projeto foi desenvolvido com o angular: [Angular CLI](https://github.com/an
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-##Versão do node 14.20
+### Versão do node 14.20
