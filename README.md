@@ -4,6 +4,6 @@ Esse projeto foi desenvolvido com o angular: [Angular CLI](https://github.com/an
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Inicie o projeto com `ng serve` para um ambiente de desenvolvimento de teste. Navegue para `http://localhost:4200/`. A aplicação é atualizada conforme as alterações são feitas no editor.
 
 ### Versão do node 14.20
